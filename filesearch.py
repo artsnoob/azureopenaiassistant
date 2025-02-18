@@ -27,7 +27,7 @@ thread = client.beta.threads.create()
 message = client.beta.threads.messages.create(
     thread_id=thread.id,
     role="user",
-    content="What information can you find in the uploaded documents?" # Replace with your question
+    content=input("Enter your question: ")
 )
 
 # Run the assistant
